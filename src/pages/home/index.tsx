@@ -29,7 +29,7 @@ import {
 
 export const Home = (): JSX.Element => {
   const gihubUrl = `https://github.com/${userData.githubUser}`;
-  const portfolioUrl = `https://github.com/${userData.githubUser}/my-portfolio`;
+  const portfolioUrl = `https://github.com/${userData.githubUser}/portfolio`;
 
   return (
     <main id="home">
@@ -37,14 +37,15 @@ export const Home = (): JSX.Element => {
         <Container>
           <HeaderContent>
             <Flex>
-              <UserImage
+            <UserImage
                 src={`https://github.com/${userData.githubUser}.png`}
                 alt={userData.nameUser}
                 title={userData.nameUser}
-                width={"48px"}
-                height={"48px"}
+                width={'48px'}
+                height={'48px'}
               />
-              <Text color="grey4">Hello, my name is {userData.nameUser}</Text>
+              <Text color="grey4">Hello, my name is {userData.nameUser}. I'm 25 years old, I'm from Manaus/AM and I fell in love with technology when I was
+                14 years old. I always see news and videos about the world of technology, be it software or hardware.</Text>
             </Flex>
             <Text as="h1" type="heading1" color="grey5">
             I{" "}
